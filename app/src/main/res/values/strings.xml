@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">HomeWork_lab1</string>
+    <string name="btn_back">Back</string>
+    <string name="fullname">Saken Armanovich</string>
+    <string name="birth">01.01.2001</string>
+    <string name="group">SIS-2119</string>
+    <string name="phone">87776665544</string>
+    <string name="email">email@gmail.com</string>
+    <string name="address">Almaty</string>
+</resources>

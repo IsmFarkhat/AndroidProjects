@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeActivity">
+
+    <EditText
+        android:id="@+id/edFieldToChange"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="152dp"
+        android:ems="10"
+        android:hint="Enter:"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/edNewValue"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Enter the new value"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="@+id/edFieldToChange"
+        app:layout_constraintStart_toStartOf="@+id/edFieldToChange"
+        app:layout_constraintTop_toBottomOf="@+id/edFieldToChange" />
+
+    <Button
+        android:id="@+id/btn_ch"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:onClick="onClickChangeData"
+        android:text="Change"
+        app:layout_constraintEnd_toEndOf="@+id/edNewValue"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/edNewValue"
+        app:layout_constraintTop_toBottomOf="@+id/edNewValue" />
+
+    <TextView
+        android:id="@+id/text_yet_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ch"
+        app:layout_constraintStart_toStartOf="@+id/btn_ch"
+        app:layout_constraintTop_toBottomOf="@+id/btn_ch" />
+
+    <Button
+        android:id="@+id/btn_back5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:onClick="onClickBack5"
+        android:text="Back"
+        app:layout_constraintEnd_toEndOf="@+id/btn_ch"
+        app:layout_constraintStart_toStartOf="@+id/btn_ch"
+        app:layout_constraintTop_toBottomOf="@+id/text_yet_use" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
